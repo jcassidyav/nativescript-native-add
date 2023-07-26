@@ -1,0 +1,89 @@
+# NativeScript
+hooks/
+node_modules/
+platforms/
+
+# Output for test etc.
+output/
+
+# NativeScript Template
+*.js.map
+*.js
+!webpack.config.js
+*.css
+!karma.conf.js
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea
+.cloud
+.project
+tmp/
+typings/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual studio files
+.vs
+
+# Generated Config Files
+src/app/config
+# Generated Theme Files
+src/app/theme
+
+# android config files
+
+App_Resources/Android/src/main/res/values-es/strings.xml
+
+#generated icon sets
+App_Resources/Android/src/main/res/mipmap-hdpi/ic_launcher.png
+App_Resources/Android/src/main/res/mipmap-hdpi/ic_launcher_foreground.png
+App_Resources/Android/src/main/res/mipmap-hdpi/ic_launcher_round.png
+App_Resources/Android/src/main/res/mipmap-mdpi/ic_launcher.png
+App_Resources/Android/src/main/res/mipmap-mdpi/ic_launcher_foreground.png
+App_Resources/Android/src/main/res/mipmap-mdpi/ic_launcher_round.png
+App_Resources/Android/src/main/res/mipmap-xhdpi/ic_launcher.png
+App_Resources/Android/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png
+App_Resources/Android/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+App_Resources/Android/src/main/res/mipmap-xxhdpi/ic_launcher.png
+App_Resources/Android/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png
+App_Resources/Android/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+App_Resources/Android/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+App_Resources/Android/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png
+App_Resources/Android/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+App_Resources/Android/src/main/res/values/ic_launcher_background.xml
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-1024.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-20.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-20@2x.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-20@3x.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@2x.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@3x.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@2x.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@3x.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@2x.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76@2x.png
+App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png
+
+#notification config files
+App_Resources/iOS/GoogleService-Info.plist
+App_Resources/Android/google-services.json
+App_Resources/Android/src/google-services.json
+
+TestResults

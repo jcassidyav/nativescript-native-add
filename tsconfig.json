@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"sourceMap": true,
+		"declaration": false,
+		"removeComments": false,
+		"noImplicitAny": true,
+		"experimentalDecorators": true,
+		"skipLibCheck": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"lib": ["ESNext"],
+		"moduleResolution": "node"
+	},
+	"include": ["index.ts","lib/", "commands/", "references.d.ts", "node_modules/nativescript/lib/common/definitions/logger.d.ts"]
+}
