@@ -53,6 +53,14 @@ export class NativeAddCommand
 		}
 	}
   
+	protected getAndroidSourcePathBase(projectData: IProjectData) {
+		if(this.isPlugin(projectData)){
+			return path.join("platforms","android","java");
+		} else {
+			const resources = this.$projectData.getAppResourcesDirectoryPath();
+		    return path.join(resources, 'Android', 'src', 'main', 'java');
+		}
+	}
 
 }
 export class NativeAddSingleCommand extends NativeAddCommand {
@@ -130,23 +138,21 @@ class ${classSimpleName} {
   }
 	public doJavaKotlin(className: string, extension: string): void {
 
-
-		if(extension == 'kotlin' && !this.checkAndUpdateGradleProperties()){
-			return;
-		}
-	
-		const resources = this.$projectData.getAppResourcesDirectoryPath();
 		const fileExt = extension == 'java'?extension:'kt'
 		const packageName = this.getPackageName(className);
 		const classSimpleName = this.getClassSimpleName(className);
-		const packagePath = path.join(resources, 'Android', 'src', 'main', 'java', ...packageName.split('.'));
+		const packagePath = path.join(this.getAndroidSourcePathBase(this.$projectData), ...packageName.split('.'));
 		const filePath = path.join(packagePath, `${classSimpleName}.${fileExt}`);
 	
 		if (fs.existsSync(filePath)) {
 			this.$errors.failWithHelp(`${extension} file '${filePath}' already exists.`);
 		  return;
 		}
-	
+
+		if(extension == 'kotlin' && !this.isPlugin(this.$projectData) && !this.checkAndUpdateGradleProperties()){
+			return;
+		}
+
 		const fileContent = extension == 'java'?this.generateJavaClassContent(packageName, classSimpleName):this.generateKotlinClassContent(packageName, classSimpleName);
 	
 		fs.mkdirSync(packagePath, { recursive: true });

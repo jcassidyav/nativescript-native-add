@@ -1,7 +1,7 @@
 {
   "name": "@jcassidyav/nativescript-native-add",
   "preferGlobal": true,
-  "version": "0.0.3",
+  "version": "0.0.5",
   "author": "jcassidyav",
   "description": "Extension to allow adding of some native files in a Nativescript Project",
   "main": "index.js",
@@ -22,7 +22,7 @@
     "docs": "docs"
   },
   "devDependencies": {
-    "nativescript": "^8.5.3"
+    "nativescript": "^8.6.5"
   },
   "analyze": true,
   "license": "Apache-2.0",
@@ -31,5 +31,11 @@
   },
   "lint-staged": {
     "*.ts": "prettier --write"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcassidyav/nativescript-native-add.git"
   }
+
 }
